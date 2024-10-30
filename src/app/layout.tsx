@@ -5,7 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "DevStore",
+  title: {
+    template: "%s | DevStore",
+    default: "DevStore",
+  },
 };
 
 export default function RootLayout({
