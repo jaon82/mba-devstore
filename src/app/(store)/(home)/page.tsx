@@ -10,7 +10,7 @@ async function getFeaturedProducts(): Promise<Product[]> {
       revalidate: 3600,
     },
   });
-  const products = response.json();
+  const products = await response.json();
   return products;
 }
 
