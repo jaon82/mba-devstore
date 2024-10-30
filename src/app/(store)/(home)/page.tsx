@@ -50,7 +50,7 @@ export default async function Home() {
             className="group relative col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
           >
             <Image
-              src={`/images${highlightedProduct.image}`}
+              src={`/images${product.image}`}
               className="group-hover:scale-105 transition-transform duration-500"
               width={920}
               height={920}
