@@ -29,10 +29,7 @@ async function getProduct(slug: string): Promise<Product> {
 // Image generation
 export default async function Image({ params }: { params: { slug: string } }) {
   const product = await getProduct(params.slug);
-  const productImageURL = new URL(
-    `/images${product.image}`,
-    env.APP_URL
-  ).toString();
+  const productImageURL = new URL(`${product.image}`, env.APP_URL).toString();
 
   return new ImageResponse(
     (

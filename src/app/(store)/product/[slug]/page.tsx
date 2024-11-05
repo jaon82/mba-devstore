@@ -45,7 +45,7 @@ export default async function ProductPage({ params }: ProductProps) {
     <div className="relative grid max-h-[860px] grid-cols-3">
       <div className="col-span-2 overflow-hidden">
         <Image
-          src={`/images${product.image}`}
+          src={`${product.image}`}
           alt=""
           width={1000}
           height={1000}
