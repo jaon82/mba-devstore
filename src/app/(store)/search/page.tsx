@@ -5,9 +5,9 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 interface SearchProps {
-  searchParams: {
+  searchParams: Promise<{
     q: string;
-  };
+  }>;
 }
 
 async function searchProducts(query: string): Promise<Product[]> {
